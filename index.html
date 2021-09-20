@@ -3,53 +3,98 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/20b5141582.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
+    <header class = "header d-flex flex-row">
+        <button input = "email"> Subscribe </button>
+        
+        <li class = "social">
+            <a><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>   
+            <a><i class="fas fa-rss"></i></a>
+        </li>
+        <li>
+           <a><i class="fab fa-twitter"></i></a> 
+        </li>
+        <li>
+           <a><i class="fab fa-youtube"></i></a> 
+        </li>
+
+
+    </header>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"> - SK8 NEWS -</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">- SK8BOARDS -</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">- BOARD DESIGN -</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">- CONTACT US -</a>
+        </li>
+      </ul>
     <div class="container">
-        <img src="./photos/sk8-main/images/bg.jpg" class="img-fluid" alt="">
-      
+       
+      <div class = "row">
+          <div class = "top col ">
+            <img class ="photoLogo" src="images/peralta-logo.png" alt="">
+            <img class = "grid" src="images/grid.png" alt="">
+            <img class ="topPhoto" src="images/top-image.png" alt="">
+            
+            
+          </div>
+
+      </div>
 
         <div id = "Tony" class="d-flex justify-content-between">
             <div class="col">
               <h2>Tony Hawk </h2>
               <h5>October 10, 2013</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id blanditiis sequi. Culpa, aut voluptatibus! Inventore deserunt alias in perferendis modi repellendus, saepe adipisci, necessitatibus, nam suscipit quia nemo obcaecati.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id blanditiis sequi. Culpa, aut voluptatibus! Inventore deserunt alias in perferendis modi repellendus, saepe adipisci, necessitatibus,<span id= "dots" >...</span><span id= "more" > nam suscipit quia nemo obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio ea, ipsa ad aliquam quas quibusdam sint dolor facilis expedita deleniti dicta mollitia. Cumque ipsam esse vitae officia itaque quae.</span></p>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
             </div>
             <div id = "rodney" class="col">
               <h2>Rodney Mullen</h2>
               <h5>March 10, 2013</h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et ea eum impedit vitae dolores eaque itaque eos, corrupti tempore quas nulla quidem excepturi, labore, commodi optio. Magni, neque veniam!</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et ea eum impedit vitae dolores eaque itaque eos, corrupti tempore quas nulla quidem excepturi, labore, commodi optio. Magni, neque veniam!<span id= "dots1" >...</span><span id= "more1" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consequuntur possimus ullam deserunt reprehenderit inventore laborum dolores, nisi expedita vel dolore minus voluptate excepturi assumenda fuga, placeat neque corrupti. Fuga.</span></p>
+              <button onclick="myFunction1()" id="myBtn1">Read more</button>
             </div>
             <div class="col">
                 <h2>Ray Barbee</h2>
                 <h5>October 4, 2013</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem facilis doloremque illo est eos neque pariatur modi harum eius nam eveniet, nemo alias laboriosam nihil cupiditate. Perspiciatis, corrupti illo.</p>
-            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem facilis doloremque illo est eos neque pariatur modi harum eius nam eveniet, nemo alias<span id= "dots2" >...</span><span id= "more2" > laboriosam nihil cupiditate. Perspiciatis, corrupti illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit quibusdam autem magni quia id, quos commodi similique eum ut fugiat aut harum laudantium necessitatibus architecto, maiores officiis facere fuga amet.</span></p>
+                <button onclick="myFunction2()" id="myBtn2">Read more</button>
+              </div>
           </div>
           
     
         
           <div id= "portraits" class="d-flex flex-row-reverse">
             <div class="col-3">
-              <img src="photos/sk8-main/images/sk8er-2.png" alt="">
+              <img src="images/sk8er-2.png" alt="">
             </div>
             <div class="col-9">
               <div class = "row">
-                <div class="col-6 ">
-                  <img src="photos/sk8-main/images/sk8er-3.png" alt="">
+                <div class="col-5 ">
+                  <img src="images/sk8er-3.png" alt="">
                 </div>
-                <div class="col-6">
-                  <img src="photos/sk8-main/images/sk8er-4.png" alt="">
+                <div class="col-5">
+                  <img src="images/sk8er-4.png" alt="">
                 </div>
               </div>
               <div class ="row">
                 <div class = "col-12">
-                    <img src="photos/sk8-main/images/sk8er-1.png" alt="">
+                    <img src="images/sk8er-1.png" alt="">
             
                 </div>
             </div>
@@ -59,42 +104,59 @@
         
         <div id ="sk8Boards" class ="row">
             <div class="col">
-                <img src="photos/sk8-main/images/sk8-3.png" class ="sk8B" alt="">
+                <img src="images/sk8-3.png" class ="sk8B" alt="">
               </div>
               <div class="col">
-                <img src="photos/sk8-main/images/sk8-1.png" alt="">
+                <img src="images/sk8-1.png" alt="">
               </div>
               <div class="col">
-                <img src="photos/sk8-main/images/sk8-2.png" alt="">
+                <img src="images/sk8-2.png" alt="">
               </div>
               <div class="col">
-                <img src="photos/sk8-main/images/sk8-4.png" alt="">
+                <img src="images/sk8-4.png" alt="">
               </div>
               <div class="col">
-                <img src="photos/sk8-main/images/sk8-5.png" alt="">
+                <img src="images/sk8-5.png" alt="">
               </div>
               <div class="col">
-               <img src="photos/sk8-main/images/sk8-6.png" alt="">
+               <img src="images/sk8-6.png" alt="">
               </div>
               <div class="col">
-                <img src="photos/sk8-main/images/sk8-7.png" alt="">
+                <img src="images/sk8-7.png" alt="">
               </div>
               <div class="col">
-                <img src="photos/sk8-main/images/sk8-8.png" alt="">
+                <img src="images/sk8-8.png" alt="">
               </div>
               <div class="col">
-                <img src="photos/sk8-main/images/sk8-9.png" alt="">
+                <img src="images/sk8-9.png" alt="">
               </div>
               <div class="col">
-                <img src="photos/sk8-main/images/sk8-10.png" alt="">
+                <img src="images/sk8-10.png" alt="">
               </div>
-              
+            </div>
+              <form>
+                <div class= "col-5" >
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Name </label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Email</label>
+                  <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Message</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Message">
+                </div>
+                </div>
+              </form>
 
-        </div>
+        
 
 
 
 
     </div>
+    <script src="./JS/main.js"></script>
 </body>
 </html>
