@@ -15,8 +15,61 @@ body {
   background-color: #cccccc;
 }
 
-div img {
-  image-orientation: flip;
+#carousel {
+  height: 500px;
+  overflow: hidden;
+  background: url("/Users/isaacbarcroft/Documents/ccs/homework/sk8/images/top-image.png") no-repeat;
+  border: solid 8px white;
+  position: relative;
+}
+
+#carousel::before {
+  content: url("/Users/isaacbarcroft/Documents/ccs/homework/sk8/images/grid.png");
+  opacity: 0.3;
+}
+
+#carousel > .logo {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: rotateY(-50%);
+}
+
+#skateboarders {
+  overflow: hidden;
+}
+
+.skateboarders div {
+  margin: 10px;
+  border: white 4px solid;
+}
+
+.lance {
+  width: 350px;
+  height: 230px;
+  overflow: hidden;
+  background: url("/Users/isaacbarcroft/Documents/ccs/homework/sk8/images/sk8er-4.png") -100px;
+}
+
+.rodney {
+  width: 360px;
+  height: 230px;
+  overflow: hidden;
+}
+
+.steve {
+  overflow: hidden;
+}
+
+.steve img {
+  overflow: hidden;
+  width: 730px;
+  height: 250px;
+}
+
+.tommy {
+  height: 530px;
+  border: white 4px solid;
 }
 
 #sk8Boards {
@@ -80,9 +133,7 @@ div img {
 form {
   background-color: whitesmoke;
   border: black 1px solid;
-  position: absolute;
-  right: 60px;
-  width: 400px;
+  height: 250px;
 }
 
 .top {
@@ -125,6 +176,14 @@ h5 {
 
 #Tony div p {
   padding-left: 10px;
+}
+
+.btn {
+  background-color: red;
+  border: red 1px solid;
+  color: white;
+  position: absolute;
+  right: 45px;
 }
 
 /*# sourceMappingURL=main.css.map */

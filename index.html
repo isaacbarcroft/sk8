@@ -45,16 +45,9 @@
       </ul>
     <div class="container">
        
-      <div class = "row">
-          <div class = "top col ">
-            <img class ="photoLogo" src="images/peralta-logo.png" alt="">
-            <img class = "grid" src="images/grid.png" alt="">
-            <img class ="topPhoto" src="images/top-image.png" alt="">
-            
-            
-          </div>
-
-      </div>
+      <section id="carousel">
+        <img class = "logo" src="images/peralta-logo.png" alt="peralta logo">
+    </section>
 
         <div id = "Tony" class="d-flex justify-content-between">
             <div class="col">
@@ -79,28 +72,18 @@
           
     
         
-          <div id= "portraits" class="d-flex flex-row-reverse">
-            <div class="col-3">
-              <img src="images/sk8er-2.png" alt="">
-            </div>
-            <div class="col-9">
-              <div class = "row">
-                <div class="col-5 ">
-                  <img src="images/sk8er-3.png" alt="">
-                </div>
-                <div class="col-5">
-                  <img src="images/sk8er-4.png" alt="">
-                </div>
-              </div>
-              <div class ="row">
-                <div class = "col-12">
-                    <img src="images/sk8er-1.png" alt="">
-            
+          <section id="skateboarders" class = "row">
+            <div class="col-12 col-md-8">
+                <div class="row skateboarders">
+                    <div class="col-12 col-md lance"></div>
+                    <div class="col-12 col-md rodney"><img src="./images/sk8er-3.png" alt="">Rodney Mullen</div>
+                    <div class="col-12 steve"><img src="./images/sk8er-1.png" alt="">Steve</div>
                 </div>
             </div>
-            
+            <div class="col-12 col-lg-4"> 
+                <div class="col"><img class = "tommy" src="./images/sk8er-2.png" alt="Tommy">Tommy</div>
             </div>
-          </div>
+        </section>
         
         <div id ="sk8Boards" class ="row">
             <div class="col">
@@ -134,8 +117,15 @@
                 <img src="images/sk8-10.png" alt="">
               </div>
             </div>
-              <form>
-                <div class= "col-5" >
+
+
+              <form class = "row">
+                <div class = "col-6">
+                    <h2>Contact Us For More Information</h2>
+                    <div> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero officia ad maiores temporibus aut eos non dolores quia incidunt dolore facilis deleniti, laudantium corporis perspiciatis possimus at error? Dolor, voluptas.</div>
+
+                </div>
+                <div class= "col-6" >
                 <div class="form-group">
                   <label for="formGroupExampleInput">Name </label>
                   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
@@ -148,6 +138,7 @@
                   <label for="formGroupExampleInput2">Message</label>
                   <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Message">
                 </div>
+                <button class ="btn submit" type="submit"> SUBMIT </button>
                 </div>
               </form>
 
